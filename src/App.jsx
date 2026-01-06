@@ -492,7 +492,7 @@ function ShopView(props) {
                   <div
                     style={{
                       width: '100%',
-                      height: 220,
+                      height: 300,
                       overflow: 'hidden',
                       borderRadius: 12,
                       background: '#f4f4f5',
