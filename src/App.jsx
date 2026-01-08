@@ -105,7 +105,7 @@ function Home() {
           <img
             src="/images/aili.jpg"
             alt="Aili Ashipala"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
         </div>
 
