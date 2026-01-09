@@ -21,7 +21,7 @@ const INITIAL_PRODUCTS = [
   {
     id: 1,
     name: 'Aloe Vera Gel',
-    price: 285,
+    price: 560,
     stock: 10,
     category: 'Forever Aloe Drinks',
     description: 'Daily aloe drink for gut health.',
@@ -31,7 +31,7 @@ const INITIAL_PRODUCTS = [
   {
     id: 2,
     name: 'Forever Arctic Sea',
-    price: 420,
+    price: 660,
     stock: 5,
     category: 'Forever Bee Products',
     description: 'Omega-3 support for heart and brain.',
@@ -41,7 +41,7 @@ const INITIAL_PRODUCTS = [
   {
     id: 3,
     name: 'Forever Multi-Maca',
-    price: 480,
+    price: 559,
     stock: 4,
     category: 'Men’s Health Products',
     description: 'Men’s vitality support.',
