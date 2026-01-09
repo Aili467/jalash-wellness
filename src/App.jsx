@@ -58,6 +58,26 @@ const INITIAL_PRODUCTS = [
     benefits: 'A refreshing daily aloe drink that supports overall women’s wellness',
     imageUrl: '/products/Aloe-berry-nectar.jpg',
   },
+  {
+    id: 5,
+    name: 'Forever Freedom',
+    price: 802,
+    stock: 5,
+    category: 'Forever Aloe Drinks',
+    description: 'Supports joint flexibility and mobility.',
+    benefits: 'Combines aloe vera with glucosamine, chondroitin, MSM, and vitamin C for optimal joint support.',
+    imageUrl: '/products/Forever-freedom.jpg',
+  },
+  {
+    id: 6,
+    name: 'Aloe Peaches',
+    price: 554,
+    stock: 5,
+    category: 'Forever Aloe Drinks',
+    description: 'Gentle and refreshing aloe drink perfect for kids',
+    benefits:'Supports healthy digestion and nutrient absorption.',
+    imageUrl: '/products/Aloe-peaches.jpg',
+  },
 ];
 
 function currency(n) {
