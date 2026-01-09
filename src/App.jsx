@@ -41,7 +41,7 @@ const INITIAL_PRODUCTS = [
   {
     id: 3,
     name: 'Forever Multi-Maca',
-    price: 559,
+    price: 569,
     stock: 4,
     category: 'Men’s Health Products',
     description: 'Men’s vitality support.',
@@ -71,7 +71,7 @@ const INITIAL_PRODUCTS = [
   {
     id: 6,
     name: 'Aloe Peaches',
-    price: 554,
+    price: 547,
     stock: 5,
     category: 'Forever Aloe Drinks',
     description: 'Gentle and refreshing aloe drink perfect for kids',
