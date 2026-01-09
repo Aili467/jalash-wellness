@@ -48,6 +48,16 @@ const INITIAL_PRODUCTS = [
     benefits: 'Supports men’s energy, stamina and reproductive health.',
     imageUrl: '/products/Multi-maca.jpg',
   },
+  {
+    id: 4,
+    name: 'Forever Aloe Berry Nectar',
+    price: 560,
+    stock: 5,
+    category: 'Forever Aloe Drinks',
+    description: 'Men’s vitality support.',
+    benefits: 'A refreshing daily aloe drink that supports overall women’s wellness',
+    imageUrl: '/products/Aloe-berry-nectar.jpg',
+  },
 ];
 
 function currency(n) {
