@@ -41,8 +41,8 @@ const INITIAL_PRODUCTS = [
   {
     id: 3,
     name: 'Forever Multi-Maca',
-    price: 569,
-    stock: 4,
+    price: 559,
+    stock: 5,
     category: 'Men’s Health Products',
     description: 'Men’s vitality support.',
     benefits: 'Supports men’s energy, stamina and reproductive health.',
@@ -54,8 +54,8 @@ const INITIAL_PRODUCTS = [
     price: 560,
     stock: 5,
     category: 'Forever Aloe Drinks',
-    description: 'Men’s vitality support.',
-    benefits: 'A refreshing daily aloe drink that supports overall women’s wellness',
+    description: 'A refreshing daily aloe drink that supports overall women’s wellness.',
+    benefits: 'Supports urinary tract and reproductive health.',
     imageUrl: '/products/Aloe-berry-nectar.jpg',
   },
   {
@@ -71,13 +71,84 @@ const INITIAL_PRODUCTS = [
   {
     id: 6,
     name: 'Aloe Peaches',
-    price: 547,
+    price: 554,
     stock: 5,
     category: 'Forever Aloe Drinks',
     description: 'Gentle and refreshing aloe drink perfect for kids',
     benefits:'Supports healthy digestion and nutrient absorption.',
     imageUrl: '/products/Aloe-peaches.jpg',
   },
+  {
+  id: 7,
+  name: 'Desire by forever',
+  price: 138,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'Deodorant Spray For Him',
+  benefits:'DESIRE BY FOREVER fragrance for men, embraces the confidence of a man in today’s day and age and has oriental, woody and fruity fragrance made from naturally derived ingredients.',
+  imageUrl: '/products/Desire.jpg',
+},
+{
+  id: 8,
+  name: 'Dream by forever',
+  price: 138,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'Deodorant Spray For Her',
+  benefits:'DESIRE BY FOREVER fragrance for women, embraces the confidence of a man in today’s day and age and has oriental, woody and fruity fragrance made from naturally derived ingredients.',
+  imageUrl: '/products/Dream.jpg',
+},
+{
+  id: 9,
+  name: 'Aloe Body Wash',
+  price: 497,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'Let the best of what nature has to offer nourish and cleanse your skin with Forever’s new Aloe Body Wash.',
+  benefits:'Hydrates and cleanses gently without stripping natural oils.Soothes irritation and calms sensitive or sun-exposed skin.Provides a cooling effect, refreshing the skin after heat or activity.Supports skin repair through vitamins and antioxidants.',
+  imageUrl: '/products/body-wash.jpg',
+},
+
+{
+  id: 10,
+  name: 'Aloe Body lotion',
+  price: 484,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'Perfect everyday moituriser to soften skin and leave it feeling smooth, hydrated and healthy',
+  benefits:'Fast absorbing lotion. Promotes skin hydration, promotes soft-feeling skin, support skin natural moisture barrier,promotes healthy, youthful-looking skin, gluten free',
+  imageUrl: '/products/Aloe-body-lotion.jpg',
+},
+{
+  id: 11,
+  name: 'Aloe Avocado Face and Body Soap',
+  price: 143,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'A plant-based cleansing product formulated for both face and body that combines stabilized aloe vera gel with avocado oil to gently clean, nourish, and hydrate the skin',
+  benefits:'Gentle and Effective Cleansing. Moisturizing and Nourishing. pSoothes and Conditions the Skine.',
+  imageUrl: '/products/Avocado-soap.jpg',
+},
+{
+  id: 12,
+  name: 'Gentleman Pride ,Aftershave',
+  price: 320,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'This aloe powered aftershave is a super hydrating moisturizer for your face and neck. It also alcohol-free and features an exclusive blend of ingredients that provides a cooling sensation, with a clean and classically sophisticated masculine scent',
+  benefits:'Alcohol-Free, Non-Drying Formula. Hydrates and Moisturizes Skin. Soothes Irritation and Razor Burn.',
+  imageUrl: '/products/Pride.jpg',
+},
+{
+  id: 13,
+  name: 'Forever Toothgel',
+  price: 165,
+  stock: 5,
+  category: 'Personal Care Products',
+  description: 'Forever Bright® Toothgel is gentle and effective because we include natural ingredients. Kids and adults alike will love the combination of natural peppermint and spearmint flavoring and frothy texture.',
+  benefits:'',
+  imageUrl: '/products/toothgel.jpg',
+},
 ];
 
 function currency(n) {
@@ -963,7 +1034,21 @@ function ShopView(props) {
 export default function App() {
   const [activePage, setActivePage] = useState('home'); // home | shop | join
 
-  const [products, setProducts] = useState(INITIAL_PRODUCTS);
+  const [products, setProducts] = useState(() => {
+    try {
+      const saved = localStorage.getItem('jlw_products_v1');
+      return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
+    } catch {
+      return INITIAL_PRODUCTS;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('jlw_products_v1', JSON.stringify(products));
+    } catch {}
+  }, [products]);
+
   const [cart, setCart] = useState([]);
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState('All Products');
