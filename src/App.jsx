@@ -250,7 +250,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Forever-artic-sea.jpg',
 },
 {
-  id: 23,
+  id: 24,
   name: 'ARG+',
   price: 1612,
   stock: 5,
@@ -260,7 +260,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/ARGI.jpg',
 },
 {
-  id: 24,
+  id: 25,
   name: 'Forever Kids Chiwable',
   price: 320,
   stock: 5,
@@ -270,7 +270,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Forever-kids-chiwable.jpg',
 },
 {
-  id: 25,
+  id: 26,
   name: 'Forever Garcia',
   price: 652,
   stock: 5,
@@ -280,7 +280,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Garcinia.jpg',
 },
 {
-  id: 26,
+  id: 27,
   name: 'Forever Garcia',
   price: 391,
   stock: 5,
@@ -290,7 +290,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Garlic-thyme.jpg',
 },
 {
-  id: 27,
+  id: 28,
   name: 'Forever lean',
   price: 889,
   stock: 5,
@@ -300,7 +300,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Forever-lean.jpg',
 },
 {
-  id: 28,
+  id: 29,
   name: 'Forever move',
   price: 1332,
   stock: 5,
@@ -310,7 +310,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Forever-move.jpg',
 },
 {
-  id: 29,
+  id: 30,
   name: 'Forever Pro Active',
   price: 783,
   stock: 5,
@@ -320,7 +320,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Forever-Pro-Biotic.jpg',
 },
 {
-  id: 30,
+  id: 31,
   name: 'Forever Active HA',
   price: 719,
   stock: 5,
@@ -330,17 +330,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/Active-HA.jpg',
 },
 {
-  id: 31,
-  name: 'Forever move',
-  price: 1780,
-  stock: 5,
-  category: 'Forever Nutritionals',
-  description: '',
-  benefits:'',
-  imageUrl: '/products/Forever-focus.jpg',
-},
-{
-  id: 31,
+  id: 32,
   name: 'Forever move',
   price: 1780,
   stock: 5,
@@ -351,6 +341,16 @@ const INITIAL_PRODUCTS = [
 },
 {
   id: 33,
+  name: 'Forever move',
+  price: 1780,
+  stock: 5,
+  category: 'Forever Nutritionals',
+  description: '',
+  benefits:'',
+  imageUrl: '/products/Forever-focus.jpg',
+},
+{
+  id: 34,
   name: 'Athritis Combo',
   price: 745,
   stock: 5,
@@ -360,7 +360,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/athritis.jpg',
 },
 {
-  id: 34,
+  id: 35,
   name: 'Diabetes Combo',
   price: 745,
   stock: 5,
@@ -370,7 +370,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/diabetes-combo.jpg',
 },
 {
-  id: 35,
+  id: 36,
   name: 'Fibroids Combo',
   price: 745,
   stock: 5,
@@ -380,7 +380,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/fibroids-combo.jpg',
 },
 {
-  id: 36,
+  id: 37,
   name: 'Vitality Combo',
   price: 745,
   stock: 5,
@@ -390,7 +390,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/vitality-combo.jpg',
 },
 {
-  id: 37,
+  id: 38,
   name: 'Women Fertility',
   price: 745,
   stock: 5,
@@ -400,7 +400,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/women-fertility.jpg',
 },
 {
-  id: 38,
+  id: 39,
   name: 'Kidney Stone',
   price: 745,
   stock: 5,
@@ -410,7 +410,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/kidney-stone.jpg',
 },
 {
-  id: 39,
+  id: 40,
   name: 'Acne Combo',
   price: 745,
   stock: 5,
@@ -420,7 +420,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/acne-kit.jpg',
 },
 {
-  id: 40,
+  id: 41,
   name: 'Gut Health Combo',
   price: 745,
   stock: 5,
@@ -430,7 +430,7 @@ const INITIAL_PRODUCTS = [
   imageUrl: '/products/gut-health.jpg',
 },
 {
-  id: 41,
+  id: 42,
   name: 'Digestive Health',
   price: 745,
   stock: 5,
